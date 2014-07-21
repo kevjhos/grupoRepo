@@ -1,0 +1,21 @@
+nombre="por defecto"
+setName = (name)->
+ @name = name+nombre
+
+resetear = ->
+  nombre=""
+
+establecer = ->
+  nombre="estudiante"
+
+person={}
+person.setName=setName
+person.setName("Adrian")
+console.log person.name
+resetear()
+
+cat={}
+cat.setName=setName
+cat.setName "Kitty"
+console.log cat.name
+
