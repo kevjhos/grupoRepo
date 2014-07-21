@@ -1,7 +1,7 @@
-   a = [1..10]
-            b = 2
-            $ -&gt;
-              for i in a
-              console.log i + b
+ a = [1..10]
+ b = 2
+ $ -&gt;
+ for i in a
+ console.log i + b
             
 
