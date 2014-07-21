@@ -1,7 +1,7 @@
-testear =(par1, par2) ->
-  nombre=par1+""+par2
+testear =(par1, par2, part3) ->
+  nombre=par1+""+par2+""+parte
 
-console.log("cocha","bamba")
+console.log("cocha","bamba","la mejor")
 
 
 
