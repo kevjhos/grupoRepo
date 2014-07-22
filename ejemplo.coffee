@@ -33,6 +33,15 @@ primo=(limite)->
       if i%j==0
         band=1
 
+console.log "Numeros primos con rango "+limite+"\n"
+for i in [4..limite]
+  band=0
+  for j in [2..i-1]
+    if i%j==0
+       band=1
+
+  if band==0
+    primos+=","+i
 
 esPrimo = (numero) ->
     res=true
@@ -49,10 +58,16 @@ numerosPrimos = (limite) ->
             res+=", #{i}"
     console.log res
 numerosPrimos 100
+
     if band==0
       primos+=","+i
   console.log(primos)
 
 primo(200)
 
+
+
+console.log primos
+
+cambios en ejemplo
 
