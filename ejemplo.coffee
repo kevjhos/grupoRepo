@@ -19,6 +19,20 @@ cat.setName=setName
 cat.setName "Kitty"
 console.log cat.name
 
+a = [1..10]
+b = 2
+for i in a
+  console.log i + b
+            
+
+primo=(limite)->
+  primos="2,3"
+  for i in [4..limite]
+    band=0
+    for j in [2..i-1]
+      if i%j==0
+        band=1
+
 console.log "Numeros primos con rango "+limite+"\n"
 for i in [4..limite]
   band=0
@@ -44,6 +58,16 @@ numerosPrimos = (limite) ->
             res+=", #{i}"
     console.log res
 numerosPrimos 100
+
+    if band==0
+      primos+=","+i
+  console.log(primos)
+
+primo(200)
+
+
+
 console.log primos
 
 cambios en ejemplo
+
