@@ -1,32 +1,3 @@
-nombre="por defecto"
-setName = (name)->
- @name = name+nombre
-
-resetear = ->
-  nombre=""
-
-establecer = ->
-  nombre="estudiante"
-
-person={}
-person.setName=setName
-person.setName("Adrian")
-console.log person.name
-resetear()
-
-cat={}
-cat.setName=setName
-cat.setName "Kitty"
-console.log cat.name
-
-a = [1..10]
-b = 2
-$ -&gt;
-for i in a
-console.log i + b
-            
-
-
 esPrimo = (numero) ->
     res=true
     for i in [2..numero] when res
